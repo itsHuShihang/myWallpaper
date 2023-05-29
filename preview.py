@@ -28,6 +28,8 @@ def edit_readme_file(file_set):
 
 
 if __name__ == '__main__':
-    path = '.'
-    traversal_files(path)
+    path1 = '.\\Japan'
+    path2 = '.\\pic'
+    traversal_files(path1)
+    traversal_files(path2)
     edit_readme_file(files)
