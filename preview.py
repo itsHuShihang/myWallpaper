@@ -20,16 +20,18 @@ def edit_readme_file(file_set):
         for file in file_set:
             md.write(file[2::])
             md.write(":\n")
-            md.write("![pic](myWallpaper\\")
-            md.write(file[2::])
+            md.write("![pic](")
+            md.write(file[2:5:])
+            md.write("/")
+            md.write(file[6::])
             md.write(")\n")
 
 
 
 
 if __name__ == '__main__':
-    path1 = '.\\Japan'
-    path2 = '.\\pic'
+    path1 = '.\jap'
+    path2 = '.\pic'
     traversal_files(path1)
     traversal_files(path2)
     edit_readme_file(files)
