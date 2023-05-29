@@ -20,7 +20,7 @@ def edit_readme_file(file_set):
         for file in file_set:
             md.write(file[2::])
             md.write(":\n")
-            md.write("![pic](.\\")
+            md.write("![pic](myWallpaper\\")
             md.write(file[2::])
             md.write(")\n")
 
