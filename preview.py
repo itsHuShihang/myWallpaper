@@ -19,7 +19,7 @@ def edit_readme_file(file_set):
         md.write("## This is the preview:\n")
         for file in file_set:
             md.write("![pic](")
-            md.write(file)
+            md.write(file[2::])
             md.write(")\n")
             md.write(file[2::])
             md.write("\n")
