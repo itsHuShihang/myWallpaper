@@ -18,11 +18,11 @@ def edit_readme_file(file_set):
     with open("README.md","w") as md:
         md.write("## This is the preview:\n")
         for file in file_set:
+            md.write(file[2::])
+            md.write(":\n")
             md.write("![pic](")
             md.write(file[2::])
             md.write(")\n")
-            md.write(file[2::])
-            md.write("\n")
 
 
 
